@@ -1,6 +1,6 @@
 #pragma once
 
-#include "XDataThread.h"
+#include "xdata_thread.h"
 #include "XFilter.h"
 #include <vector>
 

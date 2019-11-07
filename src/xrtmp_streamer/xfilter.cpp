@@ -1,6 +1,5 @@
-#include "XFilter.h"
-#include "XBilateralFilter.h"
-
+#include "xfilter.h"
+#include "xbilateral_filter.h"
 #include <iostream>
 
 

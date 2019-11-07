@@ -1,5 +1,5 @@
 #pragma once
-#include "XDataThread.h"
+#include "xdata_thread.h"
 
 
 enum XAUDIOTYPE

@@ -1,8 +1,8 @@
-#include "XController.h"
-#include "XVideoCapture.h"
-#include "XAudioRecord.h"
-#include "XMediaEncode.h"
-#include "XRtmp.h"
+#include "xcontroller.h"
+#include "xvideo_capture.h"
+#include "xaudio_record.h"
+#include "xmedia_encode.h"
+#include "xrtmp.h"
 #include <iostream>
 
 

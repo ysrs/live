@@ -29,10 +29,10 @@
     <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\..\bin\win32</OutDir>
+    <OutDir>..\..\bin\win32\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <OutDir>..\..\bin\win32\</OutDir>
   </PropertyGroup>
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
     <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
@@ -115,36 +115,36 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="XAudioRecord.cpp" />
-    <ClCompile Include="XBilateralFilter.cpp" />
-    <ClCompile Include="XController.cpp" />
-    <ClCompile Include="XData.cpp" />
-    <ClCompile Include="XDataThread.cpp" />
-    <ClCompile Include="XFilter.cpp" />
-    <ClCompile Include="XMediaEncode.cpp" />
-    <ClCompile Include="XRtmp.cpp" />
-    <ClCompile Include="xrtmpsteamer.cpp" />
-    <ClCompile Include="XVideoCapture.cpp" />
+    <ClCompile Include="xaudio_record.cpp" />
+    <ClCompile Include="xbilateral_filter.cpp" />
+    <ClCompile Include="xcontroller.cpp" />
+    <ClCompile Include="xdata.cpp" />
+    <ClCompile Include="xdata_thread.cpp" />
+    <ClCompile Include="xfilter.cpp" />
+    <ClCompile Include="xmedia_encode.cpp" />
+    <ClCompile Include="xrtmp.cpp" />
+    <ClCompile Include="xrtmp_streamer.cpp" />
+    <ClCompile Include="xvideo_capture.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="xrtmpsteamer.h" />
+    <QtMoc Include="xrtmp_streamer.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="xrtmpsteamer.ui" />
+    <QtUic Include="xrtmp_streamer.ui" />
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="xrtmpsteamer.qrc" />
+    <QtRcc Include="xrtmp_streamer.qrc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="XAudioRecord.h" />
-    <ClInclude Include="XBilateralFilter.h" />
-    <ClInclude Include="XController.h" />
-    <ClInclude Include="XData.h" />
-    <ClInclude Include="XDataThread.h" />
-    <ClInclude Include="XFilter.h" />
-    <ClInclude Include="XMediaEncode.h" />
-    <ClInclude Include="XRtmp.h" />
-    <ClInclude Include="XVideoCapture.h" />
+    <ClInclude Include="xaudio_record.h" />
+    <ClInclude Include="xbilateral_filter.h" />
+    <ClInclude Include="xcontroller.h" />
+    <ClInclude Include="xdata.h" />
+    <ClInclude Include="xdata_thread.h" />
+    <ClInclude Include="xfilter.h" />
+    <ClInclude Include="xmedia_encode.h" />
+    <ClInclude Include="xrtmp.h" />
+    <ClInclude Include="xvideo_capture.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

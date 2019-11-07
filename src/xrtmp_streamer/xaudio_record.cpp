@@ -1,4 +1,4 @@
-#include "XAudioRecord.h"
+#include "xaudio_record.h"
 #include <QAudioInput>
 #include <QMutex>
 #include <iostream>

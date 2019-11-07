@@ -1,4 +1,4 @@
-#include "XDataThread.h"
+#include "xdata_thread.h"
 
 
 XDataThread::XDataThread()

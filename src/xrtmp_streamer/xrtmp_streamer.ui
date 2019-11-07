@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>XRtmpSteamerClass</class>
- <widget class="QWidget" name="XRtmpSteamerClass">
+ <class>XRtmpStreamerClass</class>
+ <widget class="QWidget" name="XRtmpStreamerClass">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>XRtmpSteamer</string>
+   <string>XRtmpStreamer</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QLabel
@@ -159,13 +159,13 @@ QComboBox
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="xrtmpsteamer.qrc"/>
+  <include location="xrtmp_streamer.qrc"/>
  </resources>
  <connections>
   <connection>
    <sender>startButton</sender>
    <signal>clicked()</signal>
-   <receiver>XRtmpSteamerClass</receiver>
+   <receiver>XRtmpStreamerClass</receiver>
    <slot>Stream()</slot>
    <hints>
     <hint type="sourcelabel">

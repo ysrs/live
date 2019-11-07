@@ -1,5 +1,4 @@
-#include "XVideoCapture.h"
-
+#include "xvideo_capture.h"
 #include <opencv2/highgui.hpp>
 #include <iostream>
 

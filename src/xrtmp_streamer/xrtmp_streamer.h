@@ -1,7 +1,7 @@
 #pragma once
 
 #include <QtWidgets/QWidget>
-#include "ui_xrtmpsteamer.h"
+#include "ui_xrtmp_streamer.h"
 
 class XRtmpSteamer : public QWidget
 {
@@ -14,5 +14,5 @@ public slots:
 	void Stream();
 
 private:
-	Ui::XRtmpSteamerClass ui;
+	Ui::XRtmpStreamerClass ui;
 };

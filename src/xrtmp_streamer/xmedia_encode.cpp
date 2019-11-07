@@ -1,4 +1,4 @@
-#include "XMediaEncode.h"
+#include "xmedia_encode.h"
 #include <iostream>
 
 extern "C"

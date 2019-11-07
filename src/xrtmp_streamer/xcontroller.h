@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include "XDataThread.h"
+#include "xdata_thread.h"
 
 
 class XController : public XDataThread
